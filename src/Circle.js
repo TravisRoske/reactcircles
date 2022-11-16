@@ -5,10 +5,10 @@ import {useEffect, useState} from 'react'
 
 function Circle({positionX, positionY}) {
 
-    const [size, setSize] = useState(30)
+    const [size, setSize] = useState(Math.random() * 100)
 
     return (
-        <img src="favicon.ico" alt="c"  style={{
+        <img src="circle.png" alt="c"  style={{
             "width" : `${size}px`,
             "height" : `${size}px`,
             "position":"absolute", 
